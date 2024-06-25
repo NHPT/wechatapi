@@ -1,4 +1,4 @@
-module wechatapi
+module github.com/NHPT/wechatapi
 
 go 1.20
 
