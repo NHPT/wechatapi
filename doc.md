@@ -1,4 +1,25 @@
-# 文档
+## 目录
+
+- [结构体](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E7%BB%93%E6%9E%84%E4%BD%93)
+- [全局变量](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F)
+- [函数](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E5%87%BD%E6%95%B0)
+    - [无需登录](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E6%97%A0%E9%9C%80%E7%99%BB%E5%BD%95)
+        - [PrintQRCode](https://github.com/NHPT/wechatapi/blob/main/doc.md#printqrcodeinfo-string-error)
+        - [Login](https://github.com/NHPT/wechatapi/blob/main/doc.md#login-error)
+    - [需要登录](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E9%9C%80%E8%A6%81%E7%99%BB%E5%BD%95)
+        - [GetMySelf](https://github.com/NHPT/wechatapi/blob/main/doc.md#getmyself-myself)
+        - [GetChatrooms](https://github.com/NHPT/wechatapi/blob/main/doc.md#getchatrooms-int64-byte)
+        - [GetContactlist](https://github.com/NHPT/wechatapi/blob/main/doc.md#getcontactlist-int64-byte)
+        - [GetOfficiallist](https://github.com/NHPT/wechatapi/blob/main/doc.md#getofficiallist-int64-byte)
+        - [GetContactByRemarkName](https://github.com/NHPT/wechatapi/blob/main/doc.md#getcontactbyremarknameremarkname-string-byte)
+        - [GetContactByNickName](https://github.com/NHPT/wechatapi/blob/main/doc.md#getcontactbynicknamenickname-string-byte)
+        - [GetContacts](https://github.com/NHPT/wechatapi/blob/main/doc.md#getcontactsargs-string-int64-byte)
+        - [GetMsg](https://github.com/NHPT/wechatapi/blob/main/doc.md#getmsg-msgdata)
+        - [SendMsg](https://github.com/NHPT/wechatapi/blob/main/doc.md#sendmsgmsg-string-tousername-string-error)
+        - [JoinChatroom](https://github.com/NHPT/wechatapi/blob/main/doc.md#joinchatroominviteuser-string-chatroom-string-error)
+        - [RmChatroom](https://github.com/NHPT/wechatapi/blob/main/doc.md#rmchatroomuser-string-chatroom-string-error)
+        - [Logout](https://github.com/NHPT/wechatapi/blob/main/doc.md#logout)
+- [错误代码](https://github.com/NHPT/wechatapi/blob/main/doc.md#%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81)
 
 wechatapi是基于Web微信开发的适用于个人微信的API接口，该API接口中定义了一些结构体、全局变量和函数。
 
