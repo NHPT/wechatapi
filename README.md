@@ -63,7 +63,7 @@ go get github.com/NHPT/wechatapi
 
 ## 使用示例
 
-示例代码见[test.go](https://github.com/NHPT/wechatapi/blob/main/test.go)
+示例代码见[test.go](https://github.com/NHPT/wechatapi/blob/main/test/test.go)
 
 ![](https://github.com/NHPT/wechatapi/blob/main/imgs/run.png)
 
