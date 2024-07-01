@@ -701,9 +701,14 @@ func syncCheck() (int64, int64) {
     re1 := regexp.MustCompile(`retcode:"([^"]+)"`)
     re2 := regexp.MustCompile(`selector:"([^"]+)"`)
     retcode := re1.FindStringSubmatch(string(body))
-    //fmt.Println(string(body))
+    if len(retcode) < 2 {
+        return 0, 0
+    }
     retcodeInt, _ := strconv.ParseInt(retcode[1], 10, 64)
     selector := re2.FindStringSubmatch(string(body))
+    if len(selector) < 2 {
+        return 0, 0
+    }
     selectorInt, _ := strconv.ParseInt(selector[1], 10, 64)
     //fmt.Println(retcodeInt, selectorInt)
     return retcodeInt, selectorInt
