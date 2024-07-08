@@ -6,7 +6,7 @@ import (
     "net/http"
     "html"
     "regexp"
-	"time"
+    "time"
     "github.com/skip2/go-qrcode"
     "github.com/buger/jsonparser"
     "strings"
@@ -874,6 +874,7 @@ func GetMsg() MsgData {
             return
         }
         content,_ := jsonparser.GetString(value,"Content")
+        appmsgtype,_ := jsonparser.GetInt(value,"AppMsgType")
         // 群聊消息
         if strings.HasPrefix(fromuser, "@@") {
             srctype = 1
@@ -926,7 +927,6 @@ func GetMsg() MsgData {
                     }
                     srctype = 0
                 case 49:
-                    appmsgtype,_ := jsonparser.GetInt(value,"AppMsgType")
                     switch appmsgtype {
                         case 5:
                             title,_ := jsonparser.GetString(value,"FileName")
@@ -951,7 +951,7 @@ func GetMsg() MsgData {
         } else {
             srcuser = getNicknameByUsername(fromuser,"contactlist")
             // 公众号消息
-            if srcuser == "" {
+            if appmsgtype == 5 {
                 srctype = 2
                 srcname = getNicknameByUsername(fromuser,"officiallist")
                 title,_ := jsonparser.GetString(value,"FileName")
