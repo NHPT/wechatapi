@@ -26,10 +26,10 @@ assignees: ''
 **运行环境**
  - 操作系统 
    <!-- (例. Windows 10 21H1) -->
- - Java 版本 
-   <!-- (`java -version`) (例. `java version "17.0.1" 2021-10-19 LTS`) -->
+ - Go 版本 
+   <!-- (`go version`) (例. `go version go1.20.4 windows/amd64`) -->
  - 软件版本 
-   <!-- (例. 1.1.4_JDK8) -->
+   <!-- (例. 1.0.0) -->
 
 **补充说明**
 <!-- 其他相关内容，如配置文件和Stacktrace -->
